@@ -115,7 +115,7 @@ def follow_back(followers, following, total_followed, whitelisted_users, blackli
 
 # function to follow the followers of another user.
 def follow_all(followers, following, total_followed, whitelisted_users, blacklisted_users):
-    their_name = input('Input their name. Do not use an @ sign. For example, for @POTUS, input just POTUS: ')
+    their_name = input('Input the Twitter ID (number no name): ')
     their_followers = api.followers_ids(their_name)
 
     # Makes a list of nonmutual followings.
